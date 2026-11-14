@@ -1,4 +1,4 @@
-![Logo DCTT](assets/logo.png)
+(assets/logo.png)
 ## ECU Diagnóstico Automotriz
 Proyecto de diagnóstico para **Audi TT Mk1 (8N)**
 
