@@ -12,7 +12,7 @@ DCTT es una herramienta pensada para leer códigos de falla, interpretar avería
 - `LEEME‑PRIMERO.txt` → Instrucciones prio
 - `LEEME.txt` → Información general 
 - `dctt‑fuente.zip` → Copia comprimida 
-
+![Logo DCTT](logo.png)
 ### ⚙️ Instalación 🧰 ####
 1. Abre `LEEME‑PRIMERO.txt` y lee las indicaciones
 2. Ejecuta `INSTALAR.bat` para iniciar la instalación
