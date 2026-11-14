@@ -1,0 +1,30 @@
+# Base de averias DCTT - Audi TT 8N
+# Formato: codigo;descripcion
+# Edita, anade lineas y reinicia el programa. No hay que recompilar.
+00515;Sensor del arbol de levas G40 sin senal
+00537;Regulacion lambda limite superior alcanzado
+00544;Presion de sobrealimentacion limite maximo superado
+00561;Adaptacion de mezcla valor aditivo fuera de rango
+16486;Medidor de masa de aire MAF senal demasiado baja P0102
+16684;Fallo de combustion detectado P0300
+16685;Fallo de combustion cilindro 1 P0301
+16795;Sistema de aire secundario flujo insuficiente P0411
+16804;Banco 1 eficacia del catalizador por debajo del umbral P0420
+17544;Banco 1 mezcla demasiado pobre en ralenti P1136
+17705;Perdida de presion entre turbo y mariposa P1297
+17964;Control de presion de turbo presion no alcanzada P1556
+17965;Control de presion de turbo presion superada P1557
+18010;Tension de alimentacion valor demasiado bajo P1602
+01299;Modulo de diagnosis sin comunicacion en el bus de datos
+01312;Bus de datos defectuoso
+01130;Senal de freno implausible
+01435;Sensor de presion de freno G201 defectuoso
+00588;Resistencia de encendido del airbag del conductor N95 demasiado alta
+00589;Resistencia de encendido del airbag del acompanante N131 demasiado alta
+00668;Tension de a bordo terminal 30 fuera de tolerancia
+00779;Sensor de temperatura exterior G17 senal implausible
+01317;Cuadro de instrumentos sin comunicacion
+00955;Llave 1 adaptacion fuera del rango
+01366;Senal de colision cierre de puertas activado
+00928;Unidad de cierre centralizado sin senal
+65535;Unidad de control defectuosa

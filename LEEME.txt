@@ -1,0 +1,42 @@
+DCTT - Diagnostico y Codificacion Taller TT
+Audi TT Mk1 (8N) 2005 - cable KKL 409.1 (FTDI FT232RL) - Windows XP SP3
+
+QUE HAY EN ESTA CARPETA (4 archivos)
+  instalar.bat   doble clic: compila, instala y crea el acceso directo
+  dctt.cpp       todo el programa en un solo archivo (protocolo + interfaz)
+  averias.csv    descripciones de codigos, editable con el Bloc de notas
+  LEEME.txt      esto
+
+INSTALAR
+  1. Instala el driver FTDI antiguo (anterior a 2.10) y deja ftd2xx.dll
+     junto al ejecutable.
+  2. Doble clic en instalar.bat. Necesita gcc.exe en el PATH (MinGW).
+  3. Arranca DCTT desde el acceso directo del escritorio.
+
+SI PREFIERES COMPILAR A MANO
+  gcc -O2 -mwindows -o DCTT.exe dctt.cpp -lwinmm -lgdi32 -luser32
+
+USO EN EL COCHE
+  Contacto puesto y motor parado. Elige COM1-COM4, pulsa Test y luego el
+  modulo (Motor 01, ABS 03, Airbag 15, Cuadro 17, Confort 35).
+  El registro muestra cada byte: si no llega el 0x55 a 5 baudios, no hay
+  enlace con ese modulo.
+
+AVERIAS SIN RECOMPILAR
+  Edita averias.csv (codigo;descripcion) y reinicia DCTT. Nada mas.
+
+ANTES DE ESCRIBIR UNA CODIFICACION
+  Apunta el valor original que devuelve la lectura del comando 07.
+
+COMPATIBILIDAD CON WINDOWS XP
+  El ejecutable usa solo kernel32, user32, gdi32 y winmm, en ANSI y 32 bits.
+  No necesita .NET, MFC, ni Visual C++ Redistributable: se enlaza estatico
+  contra msvcrt.dll, que ya viene con XP SP3.
+  Requiere MinGW de 32 bits para compilar (no uses un gcc de 64 bits).
+  La web de DCTT no se abre en Internet Explorer 6/8: sirve para preparar
+  el trabajo desde un equipo moderno, no dentro de XP.
+
+AVISO
+  Codigo escrito desde la documentacion del protocolo KWP1281. No contiene
+  codigo de VCDS ni de Ross-Tech. Los tiempos del bit-bang dependen del
+  cable: confirmalos con el registro antes de escribir en un modulo.

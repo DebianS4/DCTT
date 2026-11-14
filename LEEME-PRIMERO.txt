@@ -1,0 +1,41 @@
+==========================================================
+  DCTT - LEEME PRIMERO
+  Diagnostico y Codificacion Taller TT
+  Audi TT Mk1 (8N) 2005 - cable KKL 409.1 - Windows XP SP3
+==========================================================
+
+INSTALAR EN 3 PASOS
+  1. Descomprime esta carpeta en el escritorio del PC con XP.
+  2. Doble clic en INSTALAR.bat
+  3. Espera a que termine y abre DCTT desde el escritorio.
+
+  INSTALAR.bat hace todo solo: copia los archivos a tu perfil,
+  compila DCTT.exe con su icono y crea el acceso directo.
+
+QUE NECESITA
+  - Windows XP SP3 de 32 bits.
+  - gcc.exe de MinGW de 32 bits en el PATH (solo para compilar).
+    Si no lo tienes, el instalador te lo dira y no rompera nada.
+  - Driver FTDI antiguo (anterior a 2.10) para el cable.
+  - ftd2xx.dll para el 5 baudios: si la dejas en esta carpeta antes
+    de instalar, el instalador la copia sola junto a DCTT.exe.
+
+SI ALGO FALLA
+  - "No se encontro gcc.exe": instala MinGW de 32 bits.
+  - "Fallo la compilacion": mira el mensaje de gcc que sale arriba.
+  - Sin icono en el .exe: falta windres, el programa funciona igual.
+  - El puerto no aparece: revisa el driver FTDI (guia en la web).
+
+CONTENIDO DE LA CARPETA
+  INSTALAR.bat        instalador de un solo clic
+  dctt.cpp            todo el programa en un archivo
+  dctt.ico            icono del ejecutable y del acceso directo
+  averias.csv         descripciones de averias, editable
+  LEEME-PRIMERO.txt   este archivo
+  LEEME.txt           manual completo
+
+COMPATIBILIDAD
+  El ejecutable usa solo kernel32, user32, gdi32 y winmm, en ANSI y
+  32 bits, enlazado estatico: no pide .NET ni Visual C++ Redistributable.
+  La web de DCTT no se abre en Internet Explorer 6/8: sirve para
+  preparar el trabajo desde otro equipo.
