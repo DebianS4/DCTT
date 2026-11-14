@@ -1,9 +1,9 @@
-![Logo DCTT](logo.png)
+![Vista del proyecto](7UFAipI2f_CScwPxo-wmy.png)
 ## ECU Diagnóstico Automotriz 
 **Audi TT Mk1 (8N)**
 ### 🚗 Descripción
 DCTT es una herramienta pensada para leer códigos de falla, interpretar averías y facilitar el diagnóstico de la ECU del Audi TT Mk1 8N.
-
+![Logo DCTT](logo.png)
 ### 📁 Archivos incluidos
 - `dctt.cpp` → Código fuente principal del programa
 - `dctt.ico` → Ícono de la aplicación
